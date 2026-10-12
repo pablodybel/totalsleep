@@ -1,11 +1,13 @@
 import { cx } from '../../utils/format';
 
 /**
- * Marca TotalSleep — archivo en `public/logo.svg`.
- * Usa BASE_URL para funcionar también bajo GitHub Pages (/totalsleep/).
+ * Marca TotalSleep — archivo oficial servido desde `public/logo.png`
+ * (480×192, relación 2.5:1).
+ *
+ * Usa BASE_URL para que también funcione en GitHub Pages (/totalsleep/).
  */
 export default function Logo({ className }) {
-  const src = `${import.meta.env.BASE_URL}logo.svg`;
+  const src = `${import.meta.env.BASE_URL}logo.png`;
 
   return (
     <img
